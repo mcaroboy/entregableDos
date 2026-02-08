@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title>Dashboard — Ask a Manager</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+<meta charset="utf-8">
+<title>Datos originales — Ask a Manager</title>
 
+<link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
 
-<header>
-  <div class="container">
-    <h1>Ask a Manager — Salary Analytics</h1>
-    <nav class="navbar">
-      <a href="index.html">Dashboard</a>
-      <a href="datos-originales.html">Datos originales</a>
-      <a href="transformaciones.html">Transformaciones (paso a paso)</a>
-      <a href="datos-finales.html">Datos finales (Modelado)</a>
-    </nav>
-  </div>
-</header>
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h1>Salary Analytics</h1>
 
-<div class="container">
-
-<div class="card">
-<h2>Base de datos original</h2>
-
-<p>
-La base proviene del formulario público “Ask a Manager Salary Survey 2021”.
-Contiene respuestas de profesionales sobre salarios, industria, ubicación y experiencia.
-</p>
-
-<h3>Variables principales</h3>
-
-<ul>
-<li><strong>Annual Salary</strong> — Salario anual reportado.</li>
-<li><strong>Additional Compensation</strong> — Bonos y compensaciones.</li>
-<li><strong>Currency</strong> — Moneda del salario.</li>
-<li><strong>Country</strong> — País de trabajo.</li>
-<li><strong>City</strong> — Ciudad.</li>
-<li><strong>Industry</strong> — Industria laboral.</li>
-<li><strong>Years of Experience</strong> — Experiencia.</li>
-</ul>
-
+  <a href="index.html">📊 Dashboard</a>
+  <a href="datos-originales.html">🗂️ Datos originales</a>
+  <a href="transformaciones.html">⚙️ Transformaciones</a>
+  <a href="datos-finales.html">📦 Datos finales</a>
 </div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <div class="topbar">
+    <h2>Datos originales</h2>
+    <p class="subtitle">
+      Base sin procesar — Ask a Manager Salary Survey 2021
+    </p>
+  </div>
+
+  <div class="card">
+
+    <h3>Descripción general</h3>
+
+    <p>
+      La base de datos proviene del formulario público 
+      <strong>Ask a Manager Salary Survey 2021</strong>, 
+      donde profesionales reportan información sobre salarios,
+      industria, ubicación y experiencia laboral.
+    </p>
+
+    <h3>Variables principales</h3>
+
+    <ul>
+      <li><strong>Annual Salary</strong> — Salario anual reportado.</li>
+      <li><strong>Additional Compensation</strong> — Bonos e ingresos adicionales.</li>
+      <li><strong>Currency</strong> — Moneda del salario.</li>
+      <li><strong>Country</strong> — País donde trabaja la persona.</li>
+      <li><strong>City</strong> — Ciudad de trabajo.</li>
+      <li><strong>Industry</strong> — Industria laboral.</li>
+      <li><strong>Job Title</strong> — Cargo.</li>
+      <li><strong>Years of Experience</strong> — Experiencia total.</li>
+      <li><strong>Education</strong> — Nivel educativo.</li>
+      <li><strong>Gender</strong> — Género.</li>
+    </ul>
+
+    <h3>Características de la base</h3>
+
+    <ul>
+      <li>Campos de texto libre.</li>
+      <li>Variaciones en nombres de países y ciudades.</li>
+      <li>Diferentes monedas.</li>
+      <li>Valores atípicos en salarios.</li>
+    </ul>
+
+  </div>
 
 </div>
 

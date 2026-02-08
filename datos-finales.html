@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title>Dashboard — Ask a Manager</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<title>Datos finales — Ask a Manager</title>
+
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-  <div class="container">
-    <h1>Ask a Manager — Salary Analytics</h1>
-    <nav class="navbar">
-      <a href="index.html">Dashboard</a>
-      <a href="datos-originales.html">Datos originales</a>
-      <a href="transformaciones.html">Transformaciones (paso a paso)</a>
-      <a href="datos-finales.html">Datos finales (Modelado)</a>
-    </nav>
-  </div>
-</header>
+<div class="sidebar">
+  <h1>Salary Analytics</h1>
 
-<div class="container">
-
-<div class="card">
-<h2>Base modelada</h2>
-
-<p>Campos creados:</p>
-
-<ul>
-<li><strong>salario_anual_cop</strong></li>
-<li><strong>compensaciones_cop</strong></li>
-<li><strong>total_compensacion_cop</strong></li>
-<li><strong>country_clean</strong></li>
-<li><strong>city_clean</strong></li>
-</ul>
-
-<p>
-Esta base es la utilizada para la visualización en Looker Studio.
-</p>
-
+  <a href="index.html">📊 Dashboard</a>
+  <a href="datos-originales.html">🗂️ Datos originales</a>
+  <a href="transformaciones.html">⚙️ Transformaciones</a>
+  <a href="datos-finales.html">📦 Datos finales</a>
 </div>
+
+<div class="main">
+
+  <div class="topbar">
+    <h2>Base de datos modelada</h2>
+    <p class="subtitle">
+      Dataset final utilizado para visualización en Looker Studio
+    </p>
+  </div>
+
+  <div class="card">
+
+    <h3>Variables creadas</h3>
+
+    <ul>
+      <li><strong>salario_anual_cop</strong> — Salario convertido a COP.</li>
+      <li><strong>compensaciones_cop</strong> — Bonos en COP.</li>
+      <li><strong>total_compensacion_cop</strong> — Suma total.</li>
+      <li><strong>country_clean</strong> — País homogeneizado.</li>
+      <li><strong>city_clean</strong> — Ciudad normalizada.</li>
+    </ul>
+
+    <h3>Uso del dataset</h3>
+
+    <p>
+      Esta base modelada permite analizar salarios por industria,
+      ubicación y experiencia, facilitando la visualización
+      estratégica en el dashboard final.
+    </p>
+
+    <h3>Aplicaciones</h3>
+
+    <ul>
+      <li>Análisis comparativo salarial.</li>
+      <li>Distribución geográfica.</li>
+      <li>Promedios por industria.</li>
+      <li>Relaciones experiencia–salario.</li>
+    </ul>
+
+  </div>
 
 </div>
 

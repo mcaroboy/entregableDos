@@ -1,41 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title>Dashboard — Ask a Manager</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<title>Transformaciones — Ask a Manager</title>
+
+<link rel="stylesheet" href="css/style.css">
 </head>
-  
 
 <body>
 
-<header>S
-  <div class="container">
-    <h1>Ask a Manager — Salary Analytics</h1>
-    <nav class="navbar">
-      <a href="index.html">Dashboard</a>
-      <a href="datos-originales.html">Datos originales</a>
-      <a href="transformaciones.html">Transformaciones (paso a paso)</a>
-      <a href="datos-finales.html">Datos finales (Modelado)</a>
-    </nav>
-  </div>
-</header>
+<div class="sidebar">
+  <h1>Salary Analytics</h1>
 
-<div class="container">
-
-<div class="card">
-<h2>Proceso de transformación</h2>
-
-<ol>
-<li>Limpieza de países (homogeneización de nombres).</li>
-<li>Limpieza de ciudades.</li>
-<li>Corrección de salarios en miles (ej: 80 → 80,000).</li>
-<li>Conversión de monedas a COP usando TRM del día.</li>
-<li>Cálculo de compensaciones en COP.</li>
-<li>Cálculo de compensación total.</li>
-</ol>
-
+  <a href="index.html">📊 Dashboard</a>
+  <a href="datos-originales.html">🗂️ Datos originales</a>
+  <a href="transformaciones.html">⚙️ Transformaciones</a>
+  <a href="datos-finales.html">📦 Datos finales</a>
 </div>
+
+<div class="main">
+
+  <div class="topbar">
+    <h2>Transformaciones de datos</h2>
+    <p class="subtitle">
+      Proceso de limpieza y modelado aplicado a la base original
+    </p>
+  </div>
+
+  <div class="card">
+
+    <h3>Proceso paso a paso</h3>
+
+    <ol>
+      <li>
+        <strong>Limpieza de Country:</strong>
+        Homogeneización de nombres (US, USA → United States).
+      </li>
+
+      <li>
+        <strong>Limpieza de City:</strong>
+        Normalización de mayúsculas, tildes y abreviaciones.
+      </li>
+
+      <li>
+        <strong>Corrección de salarios:</strong>
+        Ajuste de valores en miles (ej: 80 → 80,000).
+      </li>
+
+      <li>
+        <strong>Conversión de monedas:</strong>
+        Uso de tasa de cambio del día para convertir a COP.
+      </li>
+
+      <li>
+        <strong>Cálculo de compensaciones:</strong>
+        Conversión de bonos a COP.
+      </li>
+
+      <li>
+        <strong>Cálculo de compensación total:</strong>
+        Suma de salario anual + compensaciones.
+      </li>
+    </ol>
+
+    <h3>Herramientas usadas</h3>
+
+    <ul>
+      <li>Google Sheets — Modelado.</li>
+      <li>Funciones de conversión de moneda.</li>
+      <li>Tablas auxiliares de homogeneización.</li>
+    </ul>
+
+  </div>
 
 </div>
 
