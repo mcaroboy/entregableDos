@@ -1,109 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ask a Manager — Dashboard de Salarios (COP)</title>
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-      color:#222;
-    }
-    header{
-      padding: 28px 20px;
-      background: white;
-      border-bottom: 1px solid #e6e6e6;
-    }
-    .container{
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    h1{ margin:0 0 6px 0; font-size: 24px; }
-    p{ margin: 6px 0; line-height: 1.4; }
-    nav a{
-      margin-right: 12px;
-      text-decoration: none;
-      color: #0b5fff;
-      font-weight: 600;
-    }
-    .card{
-      background: white;
-      margin: 18px 0;
-      padding: 18px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-    }
-    .iframe-wrap{
-      width: 100%;
-      height: 820px;
-      border: 0;
-    }
-    footer{
-      padding: 18px 20px;
-      font-size: 14px;
-      color: #555;
-    }
-    code{ background:#f0f0f0; padding: 2px 6px; border-radius: 6px; }
-  </style>
+  <meta charset="utf-8">
+  <title>Dashboard — Ask a Manager</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-  <div class="container">
-    <h1>Ask a Manager — Salary Analytics</h1>
-<p>Dashboard para uso interno (limpieza + conversión a <strong>pesos colombianos (COP)</strong>).</p>
-    <nav class="navbar">
-      <a href="index.html">Dashboard</a>
-      <a href="datos-originales.html">Datos originales</a>
-      <a href="transformaciones.html">Transformaciones (paso a paso)</a>
-      <a href="datos-finales.html">Datos finales (Modelado)</a>
-    </nav>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h1>Salary Analytics</h1>
+
+  <a href="index.html">Dashboard</a>
+  <a href="datos-originales.html">Datos originales</a>
+  <a href="transformaciones.html">Transformaciones</a>
+  <a href="datos-finales.html"> Datos finales</a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <div class="topbar">
+    <h2>Ask a Manager — Salary Survey 2021</h2>
+    <p class="subtitle">
+      Dashboard interno • Conversión a pesos colombianos (COP)
+    </p>
   </div>
-  </header>
 
-  <main class="container">
-    <section class="card">
-      <h2 style="margin-top:0;">Dashboard (Looker Studio)</h2>
-      <p style="margin-bottom:14px;">
-        Si el tablero no carga, revisa que el reporte esté compartido como <code>Anyone with the link</code>.
-      </p>
+  <div class="card">
+    <h3>Dashboard interactivo</h3>
 
-      <iframe
-        class="iframe-wrap"
-        src="https://lookerstudio.google.com/embed/reporting/c8ecf485-463d-4988-87bc-f9c4ecdd16fd/page/4hvnF"
-        frameborder="0"
-        style="border:0"
-        allowfullscreen
-        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox">
-      </iframe>
-    </section>
+    <iframe
+      src="https://lookerstudio.google.com/embed/reporting/c8ecf485-463d-4988-87bc-f9c4ecdd16fd/page/4hvnF"
+      allowfullscreen>
+    </iframe>
 
-    <section class="card">
-      <h2 style="margin-top:0;">Créditos</h2>
-      <p>
-        Fuente: Ask a Manager — Salary Survey 2021 (Google Sheets público).
-      </p>
-      <p>
-        Conversión a COP: TRM del día del ejercicio (registrar aquí el valor y la fecha).
-      </p>
-      <p>
-        Última actualización del sitio: <span id="lastUpdated"></span>
-      </p>
-    </section>
-  </main>
+  </div>
 
-  <footer>
-    <div class="container">
-      <p>Repositorio publicado con GitHub Pages.</p>
-    </div>
-  </footer>
+</div>
 
-  <script>
-    // Muestra fecha de actualización del archivo en formato local simple
-    const d = new Date(document.lastModified);
-    document.getElementById("lastUpdated").textContent = d.toLocaleString();
-  </script>
 </body>
 </html>
